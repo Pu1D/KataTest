@@ -17,7 +17,7 @@ public class Main {
         } else if (exp.contains(" / ")) {
             data = exp.split(" / ");
             action = '/';
-        }else{
+        } else {
             throw new Exception("Некорректный знак действия");
         }
         if (action == '*' || action == '/') {
