@@ -18,10 +18,10 @@ public class Main {
             data = exp.split(" / ");
             action = '/';
         } else {
-            throw new Exception("Некорректный знак действия");
+            throw new Exception ()  ; // Некорректный знак действия
         }
         if (action == '*' || action == '/') {
-            if (data[1].contains("\"")) throw new Exception("Строчку можно делить или умножать только на число");
+            if (data[1].contains("\"")) throw new Exception () ;// Строчку можно делить или умножать только на число
         }
         for (int i = 0; i < data.length; i++) {
             data[i] = data[i].replace("\"", "");
